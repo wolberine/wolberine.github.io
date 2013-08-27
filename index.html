@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Alex Sookhai | USC, SSCI 591, Su2013 | Final Project</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+  </head>
+  <body>
+  	<img class="img-top" src="img/banner.jpg" width="777" height="24" alt="Nature">
+	<h1>Detroit Farmers Market Finder</h1>
+    <div id="map"></div>
+    <div id="selectMenu">
+  <form onsubmit="updateMap(layer, tableId, locationColumn)">
+    <p>Day</p>
+    <select id="Days">
+    	<option value="">--Select--</option>
+    	<option value="Su">Sunday</option>
+    	<option value="M">Monday</option>
+    	<option value="Tu">Tuesday</option>
+    	<option value="W">Wednesday</option>
+    	<option value="Th">Thursday</option>
+    	<option value="F">Friday</option>
+    	<option value="Sa">Saturday</option>
+    </select>
+    <p>Accepts SNAP/Bridge Cards?</p>
+    <select id="SNAPBridgeCards">
+    	<option value="">--Select--</option>
+    	<option value="Yes">Yes</option>
+    	<option value="No">No</option>
+    </select>
+    <p>Double Up Food Bucks Participant?</p>
+    <select id="DoubleUpFoodBucks">
+    	<option value="">--Select--</option>
+    	<option value="Yes">Yes</option>
+    	<option value="No">No</option>
+    </select>
+    <p>WIC Project FRESH Participant?</p>
+    <select id="WICProjectFresh">
+    	<option value="">--Select--</option>
+    	<option value="Yes">Yes</option>
+    	<option value="No">No</option>
+    </select>
+    <p>Market FRESH Participant?</p>
+    <select id="MarketFresh">
+    	<option value="">--Select--</option>
+    	<option value="Yes">Yes</option>
+    	<option value="No">No</option>
+    </select>
+    
+    <!--<p>Submit?</p>
+    <select id="submit">
+    	<option value="">--Select--</option>
+    	<option value="Yes">Yes</option>
+    	<option value="No">No</option>
+    </select> -->
+    <br>
+    <input type="submit" id="submit" value="Submit!" />
+  </form>
+    </div>
+    <img class="img-bottom" src="img/topnav-bottombar.jpg" width="777" height="16">
+	<p class="footer">Production Environment | SSCI 591: Web GIS | Summer 2013 </p>
+  </body>
+</html>
